@@ -1,0 +1,26 @@
+.cabeceraNav {
+    background-color: grey;
+}
+
+.cabeceraConferencia{
+    background: linear-gradient(to right bottom,#00000098, #00000098, #00000050), url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.seccionOradores {
+
+}
+
+.seccionFormulario {
+
+}
+
+.seccionFechaHora {
+
+}
+
+.pieDePagina {
+
+}
