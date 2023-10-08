@@ -1,26 +1,274 @@
-.cabeceraNav {
-    background-color: grey;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.cabeceraConferencia{
-    background: linear-gradient(to right bottom,#00000098, #00000098, #00000050), url("../assets/img/ba1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+body {
+    font-family: 'Arial', sans-serif;
+    padding:0px 30px;
+    background-color: rgb(31, 31, 31);
 }
 
-.seccionOradores {
+/* Clases utilitarias*/
+/*Colores*/
+.fuenteBlanca {
+    color: white;
+}
+.fuenteVerde {
+    color: rgb(46, 166,69);
+}
+.fuenteGrisClaro {
+    color: rgb(154, 155, 157)
+}
+/*Estilos links*/
+.noneListStyle li {
+    list-style: none;
+}
+.noneDecoration a {
+    text-decoration: none;
+}
+.estiloCajaCentrado {
 
 }
+/*Estilos por secciones*/
+/*---------------------------------- HEADER ----------------------------------------------*/
+.header {
+    height: 90vh;
+    .header__cabeceraNavLogo {
+        background-color: rgb(53, 58, 64);
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2%;
+        padding-right: 10%;
+        height: 13.5%;
 
-.seccionFormulario {
+            .header__cabeceraNavLogo__logo {
+                
+                display: flex;
+                align-items: center;
+                width: 15%;
+
+                .header__cabeceraNavLogo__logo__a img {
+                    height: 100%; 
+                    max-width: 100%; 
+                    object-fit: contain;
+                }
+            }
+            .header__cabeceraNavLogo__nav {
+                display: flex;
+                display: column;
+                align-items:center;
+                justify-content:space-evenly;
+
+                .header__cabeceraNavLogo__nav__ul li {
+                    display: flex;
+                    align-items:center;
+                    justify-content:space-evenly;
+                }
+            }
+    }
+
+    .header__conferencia{
+        background: linear-gradient(to right bottom,#00000098, #00000098, #00000050), url("../assets/img/ba1.jpg");
+        width: 100%;
+        height: 86.5%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+
+            .header__conferencia fuenteBlanca__contenedorTxt {
+                display: flex;
+
+            }
+    }
 
 }
+/*----------------------------------- MAIN --------------------------------------*/
+.main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    .main__oradores {
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .main__oradores__h2 {
+            display: flex;
 
-.seccionFechaHora {
+
+        }
+        .main__oradores__tresOradores {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            height: 80%;
+            
+            .main__oradores__tresOradores__steve {
+                display: flex;
+                flex-direction: column;
+                .main__oradores__tresOradores__steve__img {
+                    height: 50%;
+                    object-fit: contain;
+                }
+                .main__oradores__tresOradores__steve__etq{
+
+                }
+            }
+            .main__oradores__tresOradores__gates {
+                display: flex;
+                flex-direction: column;
+                .main__oradores__tresOradores__gates__img{
+                    
+                    object-fit: contain;
+                    
+                }
+                .main__oradores__tresOradores__gates_etq{
+
+                }
+            }s
+            .main__oradores__tresOradores__ada {
+                display: flex;
+                flex-direction: column;
+                .main__oradores__tresOradores__ada__img {
+                    object-fit: contain;
+                    
+                }
+                .main__oradores__tresOradores__ada__etq{
+
+                }
+            }
+        }
+    }
+
+    .main__lugarFecha{
+        background-color: white;
+        height: 50vh;
+        width: 100%;
+        display: flex;
+       /* align-items: center;
+        height: fit-content;
+        flex-wrap:wrap;*/
+
+        .main__lugarFecha__img{
+            
+            background-image: url("../assets/img/honolulu.jpg");
+            background-repeat: no-repeat; 
+            background-position: center center;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            display: flex;
+            width: 50%;
+        }
+        .main__lugarFecha__txt{
+            display: flex;    
+            background-color: rgb(53, 58, 64);
+            box-sizing: border-box;
+            margin-left: 0.1%;
+            flex-direction: column;
+            width: 50%;            
+                .main__lugarFecha__txt__borde{
+                    padding-top: ;
+                    padding-left: 2%;                    
+                }
+        }
+        .main__lugarFecha__txt h2{
+            font-size: xx-large;
+            font-weight: 100;
+            padding-top: 3%;
+            padding-left: 2%;
+            padding-bottom: 2%;
+        }
+        .main__lugarFecha__txt p {
+            font-size: medium;
+            line-height:1.5em;
+            padding-left: 2%;
+            padding-right: 1%;
+            padding-bottom: 2%;
+        }
+        .main__lugarFecha__txt a{
+            text-decoration:none;
+            display: inline-block;
+            padding: 0.5em;
+            border: 0.01em solid white;
+            border-radius: 0.2em;
+        }
+    }
+
+    .main__formularioOrador {
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        
+        background-color: white;
+        height: 47vh;
+        width: 50%;
+        align-items: center;
+        .main__formularioOrador__formulario {
+
+        }
+    }
+    .main__formularioOrador h2{
+
+
+    }
+
+    .estiloOradorEnviar{
+        
+    }
+}
+/*----------------------------------- FOOTER --------------------------------------*/
+.footer {
+    background: linear-gradient(to right,rgb(28,54,67), rgb(30,83,114));
+    height: 13.5vh;
+    
+    .footer__nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .footer__nav__ul {
+            height: 100%;
+            width: 80%;
+            align-items: center;
+            display: flex;        
+            justify-content: space-around;
+        }
+        .footer__nav__ul li {
+            
+            font-weight: 300;
+            font-size:large;
+        }
+        .footer__nav__ul a {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
 
 }
-
-.pieDePagina {
-
+.footer a {
+    color:white;
 }
+
+
+
+ /*celular - tablet*/
+ @media screen and (min-width: 0) and (max-width:991px){
+  
+    body {
+        padding:5px;
+    }
+    
+    
+}
+
+
+
+
+

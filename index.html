@@ -4,74 +4,87 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/estilos.css">
-        <link rel="shortcut icon" href="./assets/img/faviconcodoacodo3.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./assets/img/faviconCodoACodo.ico" type="image/x-icon">
         <title>Página Codo a Codo | Conferencia - Buenos Aires</title>
     </head>
     <body>
-        <header>
-           <div class="cabeceraNav">
-                <div>
-                    <a href="#">
+        <header class="header">
+           <section class="header__cabeceraNavLogo">
+                <div class="header__cabeceraNavLogo__logo">
+                    <a href="#" class="header__cabeceraNavLogo__logo__a">
                         <img src="./assets/img/codoacodo.png" alt="Logo Codo a Codo">
                     </a>
-                    <h2>Conf Bs As</h2>
+                    <h2 class="header__cabeceraNavLogo__logo__h2 fuenteBlanca">Conf Bs As</h2>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#conferencia">La conferencia</a></li>
-                        <li><a href="#oradores">Los oradores</a></li>
-                        <li><a href="#lugarFecha">El lugar y la fecha</a></li>
-                        <li><a href="#formularioOrador">Conviértete en orador</a></li>
-                        <li><a href="./pages/comprarTickets.html">Comprar tickets</a></li>
+                <nav class="header__cabeceraNavLogo__nav noneListStyle noneDecoration">
+                    <ul class="header__cabeceraNavLogo__nav__ul">
+                        <li><a href="#conferencia" class="fuenteBlanca">La conferencia</a></li>
+                        <li><a href="#oradores" class="fuenteGrisClaro">Los oradores</a></li>
+                        <li><a href="#lugarFecha" class="fuenteGrisClaro">El lugar y la fecha</a></li>
+                        <li><a href="#formularioOrador" class="fuenteGrisClaro">Conviértete en orador</a></li>
+                        <li><a href="./pages/comprarTickets.html" class="fuenteVerde">Comprar tickets</a></li>
                     </ul>
                 </nav>
-            </div>
-            <section id="conferencia" class="cabeceraConferencia"> 
-                <h1>Conf Bs As</h1>
-                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores del primer nivel que tenemos para ti. Te esperamos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quis praesentium nisi similique pariatur iste rem id omnis ut minus doloribus nemo inventore, architecto cumque reprehenderit accusamus placeat iusto ad.
-                Explicabo recusandae autem deserunt illum quod fuga ut minima dicta excepturi? Dignissimos beatae eaque reiciendis optio exercitationem! Nesciunt blanditiis sed dolorem eligendi iusto dolorum ipsum, quas, dolores libero sunt molestiae!
-                Voluptatum accusantium recusandae repellat, similique fuga ipsa officiis veritatis. Deserunt neque esse sit. Voluptas magnam totam ex quaerat id impedit consectetur ab, cumque, quas tempora suscipit corporis obcaecati delectus? Suscipit?
-                Quasi eius illo numquam soluta in illum, deserunt tempore, aliquam quae pariatur ipsa aut molestias alias impedit cum reprehenderit, vero blanditiis eligendi ipsam fugiat ea quisquam. Explicabo deserunt adipisci nam!
-                Quasi rem temporibus, molestias ad ipsa, doloribus repudiandae nihil dignissimos, quam optio sit quo velit voluptates. Soluta porro totam ab, atque quae modi enim neque quis illum error minima alias.
-                Autem repellat officiis totam eveniet dolorem magnam. Ea, eos? Natus saepe corporis doloribus cum impedit fugit cupiditate culpa sed eaque possimus quas, incidunt repellat consequatur iusto placeat qui voluptatum laudantium!</p>
-                <a href="#">Quiero ser orador</a>
+            </section>
+            <section id="conferencia" class="header__conferencia fuenteBlanca"> 
+                <div class="header__conferencia fuenteBlanca__contenedorTxt"><h1>Conf Bs As</h1>
+                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores del primer nivel que tenemos para ti. Te esperamos!</p>
+                <a href="#formularioOrador">Quiero ser orador</a>
                 <a href="./pages/comprarTickets.html">Comprar tickets</a>
+                </div>
             </section>
         </header>
-        <main>
-            <section id="oradores">
-                <h2><div>CONOCE A LOS</div>ORADORES</h2>
+        <main class="main">
+            <section id="oradores" class="main__oradores">
+                <h2 class="main__oradores_h2">
                     <div>
-                        <img src="./assets/img/steve.jpg" alt="Steve Jobs">
+                        CONOCE A LOS
+                    </div>
+                    ORADORES
+                </h2>
+                <div class="main__oradores__tresOradores">
+                    <div class="main__oradores__tresOradores__steve">
+                        <div class="main__oradores__tresOradores__steve_img">
+                            <img src="./assets/img/steve.jpg" alt="Steve Jobs">
+                        </div>
                         <h4>JavaScript</h4>
                         <h4>React</h4>
                         <h3>Steve Jobs</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nihil similique soluta alias ab architecto debitis doloremque inventore incidunt nam quis facere. Nemo eum ex eveniet modi rem possimus autem.</p>
                     </div>
-                    <div>
-                        <img src="./assets/img/bill.jpg" alt="Bill Gates">
+                    <div class="main__oradores__tresOradores__gates">
+                        <div class="main__oradores__tresOradores__gates__img">
+                            <img src="./assets/img/bill.jpg" alt="Bill Gates">
+                        </div>
                         <h4>JavaScript</h4>
                         <h4>React</h4>
                         <h3>Bill Gates</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti cupiditate exercitationem earum nobis quia excepturi iusto tempore, architecto consectetur soluta, cum quibusdam corporis recusandae labore quam distinctio harum. Fuga.</p>
                     </div>
-                    <div>
-                        <img src="./assets/img/ada.jpeg" alt="Ada Lovelace">
+                    <div class="main__oradores__tresOradores__ada">
+                        <div class="main__oradores__tresOradores__ada__img">
+                            <img src="./assets/img/ada.jpeg" alt="Ada Lovelace">
+                        </div>
                         <h4>Negocios</h4>
                         <h4>Startups</h4>
                         <h3>Ada Lovelace</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti cupiditate exercitationem earum nobis quia excepturi iusto tempore, architecto consectetur soluta, cum quibusdam corporis recusandae labore quam distinctio harum. Fuga.</p>
                     </div>
-            </section>
-            <section id="lugarFecha">
-                <img src="./assets/img/honolulu.jpg" alt="Honolulu">
-                <div>
-                    <h2>Bs As - Octubre</h2>
-                    <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad- condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie).</p>
-                    <a href="#">Conocé más</a>
                 </div>
             </section>
-            <section id="formularioOrador">
+            <section id="lugarFecha" class="main__lugarFecha">
+                <div class="main__lugarFecha__img">
+                    <!--<img src="./assets/img/honolulu.jpg" alt="Honolulu"> -->
+                </div>
+                <div class="main__lugarFecha__txt fuenteBlanca">
+                    <h2>Bs As - Octubre</h2>
+                    <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad- condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie).</p>
+                    <div class="main__lugarFecha__txt__borde">
+                        <a href="#" class="fuenteBlanca">Conocé más</a>
+                    </div>
+                </div>
+            </section>
+            <section id="formularioOrador" class="main__formularioOrador">
                 <h2><div>Conviértete en un</div>Orador</h2>
                 <p>Anotate como orador para dar una <span>charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
                 <form action="">
@@ -82,19 +95,19 @@
                     <div>
                         <textarea name="temaOrador" id="temaOrador" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
                         <p>Recuerda incluir un título para tu charla</p>
-                        <input type="submit" value="Enviar">
+                        <input type="submit" value="Enviar" class="estiloOradorEnviar">
                     </div>
                 </form>
             </section>
         </main>
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="#">Preguntas Frecuentes</a></li>
+        <footer class="footer">
+            <nav class="footer__nav noneListStyle noneDecoration">
+                <ul class="footer__nav__ul">
+                    <li><a href="#"><span>Preguntas</span><span>frecuentes</span></a></li>
                     <li><a href="#">Contáctanos</a></li>
                     <li><a href="#">Prensa</a></li>
                     <li><a href="#">Conferencias</a></li>
-                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#"></span>Términos y</span><span>condiciones</span></a></li>
                     <li><a href="#">Privacidad</a></li>
                     <li><a href="#">Estudiantes</a></li>
                 </ul>
