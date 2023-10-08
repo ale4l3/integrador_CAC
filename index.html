@@ -47,8 +47,10 @@
                         <div class="main__oradores__tresOradores__steve_img">
                             <img src="./assets/img/steve.jpg" alt="Steve Jobs">
                         </div>
-                        <h4>JavaScript</h4>
-                        <h4>React</h4>
+                        <div class="main__oradores__tresOradores__steve__etq">
+                            <h4>JavaScript</h4>
+                            <h4>React</h4>
+                        </div>
                         <h3>Steve Jobs</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nihil similique soluta alias ab architecto debitis doloremque inventore incidunt nam quis facere. Nemo eum ex eveniet modi rem possimus autem.</p>
                     </div>
@@ -56,8 +58,10 @@
                         <div class="main__oradores__tresOradores__gates__img">
                             <img src="./assets/img/bill.jpg" alt="Bill Gates">
                         </div>
-                        <h4>JavaScript</h4>
-                        <h4>React</h4>
+                        <div class="main__oradores__tresOradores__gates__etq">
+                            <h4>JavaScript</h4>
+                            <h4>React</h4>
+                        </div>  
                         <h3>Bill Gates</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti cupiditate exercitationem earum nobis quia excepturi iusto tempore, architecto consectetur soluta, cum quibusdam corporis recusandae labore quam distinctio harum. Fuga.</p>
                     </div>
@@ -65,8 +69,10 @@
                         <div class="main__oradores__tresOradores__ada__img">
                             <img src="./assets/img/ada.jpeg" alt="Ada Lovelace">
                         </div>
-                        <h4>Negocios</h4>
-                        <h4>Startups</h4>
+                        <div class="main__oradores__tresOradores__ada__etq">
+                            <h4>Negocios</h4>
+                            <h4>Startups</h4>
+                        </div>
                         <h3>Ada Lovelace</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti cupiditate exercitationem earum nobis quia excepturi iusto tempore, architecto consectetur soluta, cum quibusdam corporis recusandae labore quam distinctio harum. Fuga.</p>
                     </div>
@@ -85,17 +91,25 @@
                 </div>
             </section>
             <section id="formularioOrador" class="main__formularioOrador">
-                <h2><div>Conviértete en un</div>Orador</h2>
-                <p>Anotate como orador para dar una <span>charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
-                <form action="">
-                    <div>
+                <h2>
+                    <div>Conviértete en un</div>
+                    Orador
+                </h2>
+                <p>Anotate como orador para dar una 
+                    <span>charla ignite</span>
+                    . Cuéntanos de qué quieres hablar!
+                </p>
+                <form action="" class="main__formularioOrador__formulario">
+                    <div class="main__formularioOrador__formulario__apellidoNombre">
                         <input type="text" name="nombreOradorForm" id="nombreOradorForm" placeholder="Nombre">
                         <input type="text" name="apellidoOradorForm" id="apellidoOradorForm" placeholder="Apellido">
                     </div>
-                    <div>
+                    <div class="main__formularioOrador__formulario__textArea">
                         <textarea name="temaOrador" id="temaOrador" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
                         <p>Recuerda incluir un título para tu charla</p>
+                        <div>
                         <input type="submit" value="Enviar" class="estiloOradorEnviar">
+                        </div>
                     </div>
                 </form>
             </section>
@@ -113,5 +127,6 @@
                 </ul>
             </nav>
         </footer>
+        
     </body>
 </html>
