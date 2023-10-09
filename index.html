@@ -13,9 +13,11 @@
            <section class="header__cabeceraNavLogo">
                 <div class="header__cabeceraNavLogo__logo">
                     <a href="#" class="header__cabeceraNavLogo__logo__a">
-                        <img src="./assets/img/codoacodo.png" alt="Logo Codo a Codo">
+                        <img src="./assets/img/codoacodo.png" alt="Logo Codo a Codo" loading="lazy">
                     </a>
-                    <h2 class="header__cabeceraNavLogo__logo__h2 fuenteBlanca">Conf Bs As</h2>
+                    <h2 class="header__cabeceraNavLogo__logo__h2 fuenteBlanca">
+                        Conf Bs As
+                    </h2>
                 </div>
                 <nav class="header__cabeceraNavLogo__nav noneListStyle noneDecoration">
                     <ul class="header__cabeceraNavLogo__nav__ul">
@@ -28,10 +30,12 @@
                 </nav>
             </section>
             <section id="conferencia" class="header__conferencia fuenteBlanca"> 
-                <div class="header__conferencia fuenteBlanca__contenedorTxt"><h1>Conf Bs As</h1>
+                <div class="header__conferencia__contenedorTxt fuenteBlanca noneDecoration">
+                <h1>Conf Bs As</h1>
                 <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores del primer nivel que tenemos para ti. Te esperamos!</p>
-                <a href="#formularioOrador">Quiero ser orador</a>
-                <a href="./pages/comprarTickets.html">Comprar tickets</a>
+                <div class="header__conferencia__contenedorTxt__botones">
+                    <a href="#formularioOrador"class="fuenteBlanca">Quiero ser orador</a>
+                    <a href="./pages/comprarTickets.html" class="estiloBotonVerde header__conferencia__contenedorTxt__botones__a">Comprar tickets</a>
                 </div>
             </section>
         </header>
@@ -46,7 +50,7 @@
                 <div class="main__oradores__tresOradores">
                     <div class="main__oradores__tresOradores__steve">
                         <div class="main__oradores__tresOradores__steve_img">
-                            <img src="./assets/img/steve.jpg" alt="Steve Jobs">
+                            <img src="./assets/img/steve.jpg" alt="Steve Jobs" loading="lazy">
                         </div>
                         <div class="main__oradores__tresOradores__steve__etq">
                             <h4>JavaScript</h4>
@@ -57,7 +61,7 @@
                     </div>
                     <div class="main__oradores__tresOradores__gates">
                         <div class="main__oradores__tresOradores__gates__img">
-                            <img src="./assets/img/bill.jpg" alt="Bill Gates">
+                            <img src="./assets/img/bill.jpg" alt="Bill Gates" loading="lazy">
                         </div>
                         <div class="main__oradores__tresOradores__gates__etq">
                             <h4>JavaScript</h4>
@@ -68,7 +72,7 @@
                     </div>
                     <div class="main__oradores__tresOradores__ada">
                         <div class="main__oradores__tresOradores__ada__img">
-                            <img src="./assets/img/ada.jpeg" alt="Ada Lovelace">
+                            <img src="./assets/img/ada.jpeg" alt="Ada Lovelace" loading="lazy">
                         </div>
                         <div class="main__oradores__tresOradores__ada__etq">
                             <h4>Negocios</h4>
@@ -80,7 +84,7 @@
                 </div>
             </section>
             <section id="lugarFecha" class="main__lugarFecha">
-                <div class="main__lugarFecha__img">
+                <div class="main__lugarFecha__img" loading="lazy">
                     <!--<img src="./assets/img/honolulu.jpg" alt="Honolulu"> -->
                 </div>
                 <div class="main__lugarFecha__txt fuenteBlanca">
@@ -92,9 +96,13 @@
                 </div>
             </section>
             <section id="formularioOrador" class="main__formularioOrador">
-                <h2>
-                    <div>Conviértete en un</div>
-                    Orador
+                <h2 class="main__formularioOrador__h2">
+                    <span class="main__formularioOrador__h2__span">
+                        Conviértete en un
+                    </span>
+                    <span>
+                        ORADOR
+                    </span>
                 </h2>
                 <p>Anotate como orador para dar una 
                     <span>charla ignite</span>
@@ -109,7 +117,7 @@
                         <textarea name="temaOrador" id="temaOrador" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
                         <p>Recuerda incluir un título para tu charla</p>
                         <div>
-                        <input type="submit" value="Enviar" class="estiloOradorEnviar">
+                        <input type="submit" value="Enviar" class="estiloBotonVerde">
                         </div>
                     </div>
                 </form>
