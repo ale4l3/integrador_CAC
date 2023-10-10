@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    padding:0px 30px;
+    padding:0vw 1vw;
+    box-sizing: border-box;
     background-color: rgb(31, 31, 31);
 }
 
@@ -28,76 +29,149 @@ body {
 .noneDecoration a {
     text-decoration: none;
 }
+.fontSizeMedium{
+    font-size:medium;
+}
+.underlineDotted{
+    text-decoration-line: underline;
+    text-decoration-style: dotted;  
+}
 .estiloBotonVerde{
     color: white;
     display: inline-block;
     background-color: rgb(150, 201,62);
     border: 0.1em solid  rgb(150, 201,62);
     border-radius: 0.2em;
+    box-sizing: border-box;
+}
+.estiloBotonVerdeEnviarOrador{
+    color: white;
+    display: inline-block;
+    background-color: rgb(150, 201,62);
+    border: 0.1em solid  rgb(150, 201,62);
+    border-radius: 0.2em;
+    box-sizing: border-box;
+}
+.estiloBotonJavaScript{
+    background-color: rgb(255,194,7);
+    border: 0.1em solid rgb(255,194,7);
+    box-sizing: border-box;
+    border-radius: 0.3em;
+    padding: 0.2em;
+    margin-top:1em;
+    margin-bottom:0.1em;
+    margin-left:0.5em;
+    margin-right:0.3em;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+}
+.estiloBotonReactScript{
+    background-color: rgb(23,162,183);
+    border: 0.1em solid rgb(23,162,183);
+    box-sizing: border-box;
+    border-radius: 0.3em;
+    padding: 0.2em;
+    margin-top:1em;
+    margin-bottom:0.1em;
+    margin-left:0.3em;
+    margin-right:1em;
+    display: inline-block;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
+.estiloBotonNegocios{
+    background-color: rgb(108,117,126);
+    border: 0.1em solid rgb(108,117,126);
+    box-sizing: border-box;
+    border-radius: 0.3em;
+    padding: 0.2em;
+    margin-top:1em;
+    margin-bottom:0.1em;
+    margin-left:0.3em;
+    margin-right:1em;
+    display: inline-block;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
+.estiloBotonStartups{
+    background-color: rgb(220,54,68);
+    border: 0.1em solid rgb(220,54,68);
+    box-sizing: border-box;
+    border-radius: 0.3em;
+    padding: 0.2em;
+    margin-top:1em;
+    margin-bottom:0.1em;
+    margin-left:0.3em;
+    margin-right:1em;
+    display: inline-block;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
 }
 /*Estilos por secciones*/
 /*---------------------------------- HEADER ----------------------------------------------*/
 .header {
     height: 90vh;
-    .header__cabeceraNavLogo {
+    .header__cabeceraNavLogo{
+        height: 13.5%;
+        width: 100%;
         background-color: rgb(53, 58, 64);
-        display: flex;
-        justify-content: space-between;
         padding-left: 2%;
         padding-right: 10%;
-        height: 13.5%;
-        width: 100vw;
-
-            .header__cabeceraNavLogo__logo {        
-                display: flex;
-                align-items: center;
-                width: 50vw;
-
-                .header__cabeceraNavLogo__logo__a {
-                    height: 100%; 
-                    max-width: 50%; 
-                    object-fit: contain;
-                }
-
-                .header__cabeceraNavLogo__logo__a img {
-                    height: 100%; 
-                    object-fit: contain;
-                }
-                header__cabeceraNavLogo__logo__h2 {
-                    width: 50%;
-                    height: 100%;
-                    justify-content: flex-start;
-                }
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        .header__cabeceraNavLogo__logo{        
+            width: 50vw;
+            display: flex;
+            align-items: center;
+            .header__cabeceraNavLogo__logo__a{
+                height: 100%; 
+                max-width: 50%; 
+                object-fit: contain;
             }
-            .header__cabeceraNavLogo__nav {
+            .header__cabeceraNavLogo__logo__a img {
+                height: 100%; 
+                object-fit: contain;
+            }
+            header__cabeceraNavLogo__logo__h2{
+                width: 30%;
+                height: 100%;
+                justify-content: flex-start;
+            }
+        }
+        .header__cabeceraNavLogo__nav{
+            width: 85%;
+            display: flex;
+            align-items:center;
+            justify-content:space-evenly;
+            .header__cabeceraNavLogo__nav__ul{
+                height: 100%;
+                width: 100%;
+                align-items: center;
                 display: flex;
+                justify-content: space-around;
+            }
+            .header__cabeceraNavLogo__nav__ul li {
                 align-items:center;
                 justify-content:space-evenly;
-                width: 50%;
-
-                .header__cabeceraNavLogo__nav__ul {
-                    align-items: center;
-                    display: flex;
-                    height: 100%;
-                    width: 100%;
-                    justify-content: space-around;
-                }
-                .header__cabeceraNavLogo__nav__ul li {
-                    
-                    align-items:center;
-                    justify-content:space-evenly;
-                }
-                .header__cabeceraNavLogo__nav__ul a {
-                    font-size: large;
-                    display: flex;
-                    align-items:center;
-                    flex-direction: column;
-                    justify-content:space-evenly;
-                }
             }
+            .header__cabeceraNavLogo__nav__ul a {
+                text-align: center;
+                font-size:medium;
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content:space-evenly;
+            }
+        }
     }
-
     .header__conferencia{
+        height: 86.5%;
+        width: 100%;
         background: linear-gradient(to right bottom,#00000098, #00000098, #00000050), url("../assets/img/ba1.jpg");
         background-size: cover;
         background-position: center;
@@ -106,199 +180,323 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 86.5%;
-        width: 100%;
-        
-            .header__conferencia__contenedorTxt {
-                display: flex;
-                flex-direction: column;
-                text-align: right;
-                height: 50%;
-                width: 100%;
-                padding-left: 50%;
-                padding-right: 10%;
-                padding-top: 8%;
-
-                .header__conferencia__contenedorTxt__botones__a  {
-                    border: 0.1em solid  rgb(41, 167,67) !important;
-                    background-color: rgb(41, 167,67);
-                }
-                .header__conferencia__contenedorTxt__botones a{
-                    text-decoration:none;
-                    display: inline-block;
-                    padding: 0.5em;
-                    border: 0.01em solid white;
-                    border-radius: 0.2em;
-                }
-                
+        .header__conferencia__contenedorTxt{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            height: 50%;
+            width: 100%;
+            padding-left: 50%;
+            padding-right: 10%;
+            padding-top: 8%;
+            .header__conferencia__contenedorTxt__botones__a{
+                box-sizing: border-box;
+                border: 0.1em solid  rgb(41, 167,67) !important;
+                background-color: rgb(41, 167,67);
             }
+            .header__conferencia__contenedorTxt__botones a{
+                box-sizing: border-box;
+                text-decoration:none;
+                display: inline-block;
+                padding: 0.5em;
+                border: 0.01em solid white;
+                border-radius: 0.2em;
+            }  
+        }
     }
-
 }
 /*----------------------------------- MAIN --------------------------------------*/
-.main {
+.main{
+    height: 190vh;
+    width: 100%;
     background-color: white;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    .main__oradores {
-        height: 80vh;
-        width: 100%;
+    align-items: center;
+    justify-content: center;
+    .main__oradores{
+        width: 75%;
+        height: 40%;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-        .main__oradores__h2 {
-            display: flex;
-        }
-        .main__oradores__tresOradores {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+        .main__oradores__h2{
             width: 100%;
-            height: 80%;
-            
+            height: 10%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .main__oradores__h2__chico{
+                font-size:medium;
+            }
+        }
+        .main__oradores__tresOradores{
+            width:100%;
+            height: 75%;
+            display: flex;
+            justify-content: space-around;
             .main__oradores__tresOradores__steve {
+                width: 25%;
+                height: 100%;
                 display: flex;
                 flex-direction: column;
                 .main__oradores__tresOradores__steve__img {
-                    height: 50%;
+                    width: auto;
+                    height: 75%;
+                                    
+                }
+                .main__oradores__tresOradores__steve__img img {
+                    width: 100%;
+                    height: 100%;
                     object-fit: contain;
                 }
-                .main__oradores__tresOradores__steve__etq{
 
+                .main__oradores__tresOradores__steve__card{
+                    width: 100%;
+                    height: 50%;
+                    
+                    .main__oradores__tresOradores__steve__card__etq {
+                        display: flex;
+                        align-items: start;
+                    }
+                    .main__oradores__tresOradores__steve__card__h3{
+                        box-sizing: border-box;
+                        padding-top: 0.1em;
+                        padding-left: 0.4em;
+                        font-size: x-large;
+                    }
+                    .main__oradores__tresOradores__steve__card__p{
+                        height: 100%;
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding-top: 0.1em;
+                        padding-left: 0.4em;
+                        padding-right: 0.4em;
+                        font-size: small;
+                    }
                 }
             }
             .main__oradores__tresOradores__gates {
+                width: 25%;
+                height: 100%;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 .main__oradores__tresOradores__gates__img{
-                    
-                    object-fit: contain;
-                    
+                    width: 100%;
+                    height: 60%;
+                    object-fit: contain;  
                 }
-                .main__oradores__tresOradores__gates_etq{
-
+                .main__oradores__tresOradores__gates__card{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    .main__oradores__tresOradores__gates__card__etq{
+                        display: flex;
+                        align-items: start;
+                    }
+                    .main__oradores__tresOradores__gates__card__h3{
+                        box-sizing: border-box;
+                        padding-top: 0.1em;
+                        padding-left: 0.4em;
+                        font-size: x-large;
+                    }
+                    .main__oradores__tresOradores__gates__card__p{
+                        box-sizing: border-box;
+                        padding-top: 0.1em;
+                        padding-left: 0.4em;
+                        padding-right: 0.4em;
+                        font-size: small;
+                    }
                 }
             }
             .main__oradores__tresOradores__ada {
+                width: 25%;
+                height: 100%;
                 display: flex;
                 flex-direction: column;
                 .main__oradores__tresOradores__ada__img {
-                    object-fit: contain;
-                    
+                    width: 100%;
+                    height: 60%;
+                    object-fit: contain; 
                 }
-                .main__oradores__tresOradores__ada__etq{
+                .main__oradores__tresOradores__ada__card{
+                    width: 100%;
+                    height: 50%;
+                    .main__oradores__tresOradores__ada__card__etq{
+                        display: flex;
+                        align-items: start;
+                    }
+                    .main__oradores__tresOradores__ada__card__h3 {
+                        box-sizing: border-box;
+                        padding-top: 0.1em;
+                        padding-left: 0.4em;
+                        font-size: x-large;
+                    }
+                    .main__oradores__tresOradores__ada__card__p{
+                        box-sizing: border-box;
+                        padding-top: 0.1em;
+                        padding-left: 0.4em;
+                        padding-right: 0.4em;
+                        font-size: small;
+                    }
+                }
 
-                }
             }
         }
     }
-
     .main__lugarFecha{
-        background-color: white;
-        height: 50vh;
+        height: 35%;
         width: 100%;
+        background-color: white;
+        box-sizing: border-box;
         display: flex;
-       /* align-items: center;
-        height: fit-content;
-        flex-wrap:wrap;*/
-
         .main__lugarFecha__img{
-            height: 95%;
+            height: 100%;
+            width: 50%;
             background-image: url("../assets/img/honolulu.jpg");
             background-repeat: no-repeat; 
             background-position: center center;
             background-size: 100% 100%;
             box-sizing: border-box;
             display: flex;
-            width: 50%;
+
         }
         .main__lugarFecha__txt{
-            height: 95%;
-            display: flex;    
+            height: 100%;
+            width: 50%;  
             background-color: rgb(53, 58, 64);
             box-sizing: border-box;
             margin-left: 0.1%;
-            flex-direction: column;
-            width: 50%;            
+            display: flex;  
+            flex-direction: column;         
                 .main__lugarFecha__txt__borde{
+                    box-sizing: border-box;
                     padding-left: 2%;                    
                 }
         }
         .main__lugarFecha__txt h2{
-            font-size: xx-large;
-            font-weight: 100;
+            box-sizing: border-box;
             padding-top: 3%;
             padding-left: 2%;
             padding-bottom: 2%;
+            font-size: xx-large;
+            font-weight: 100;
         }
         .main__lugarFecha__txt p {
-            font-size: medium;
+            box-sizing: border-box;
             line-height:1.5em;
             padding-left: 2%;
             padding-right: 1%;
             padding-bottom: 2%;
+            font-size: medium;
         }
         .main__lugarFecha__txt a {
-            text-decoration:none;
-            display: inline-block;
+            box-sizing: border-box;
             padding: 0.5em;
             border: 0.01em solid white;
             border-radius: 0.2em;
+            text-decoration:none;
+            display: inline-block;
         }
     }
-
-    .main__formularioOrador {
-        align-items: center;
+    .main__formularioOrador{
+        height: 25%;
+        width: 100%;
+        background-color: white;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-        background-color: white;
-        height: 47vh;
-        width: 100vw;
-
-        .main__formularioOrador__h2 {
+        .main__formularioOrador__h2{
             height: 100%;
-            width: 100%;
+            width: 100%;           
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
-                .main__formularioOrador__h2__span{
-                    font-size:medium;
-                }
+            .main__formularioOrador__h2__div{
+                height: 50%;
+                width: 100%;
+                box-sizing: border-box;
+                padding-top: 2em;
+                padding-bottom: 1em;
+                font-size:medium;
+            }
         }
-        .main__formularioOrador__h2 span {
+        .main__formularioOrador__h2 div {
             height: 100%;
             width: 100%;
+            box-sizing: border-box;
             display: flex;
             justify-content: center;
             align-content: center;
         }
-
-        .main__formularioOrador {
-            display: flex;
-            justify-content: center;
-            height: 100%;
-            width: 100%;
-        }
-        
         .main__formularioOrador__formulario{
-            align-items: center;
-            display: flex;
-            flex-direction: column;
             height: 100%;
             width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .main__formularioOrador__formulario__apellidoNombre{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .main__formularioOrador__formulario__apellidoNombre input{
+                height: 100%;
+                width: 25%;
+                box-sizing: border-box;
+                display: inline-block;
+                margin-left: 1em;
+                margin-right: 1em;
+                padding: 0.3em;
+            }
+            .main__formularioOrador__formulario__textArea{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                box-sizing: border-box;
+                margin-top: 1em;
+                flex-direction: column;
+                align-items: center;
+                .main__formularioOrador__formulario__textArea__enviar{
+                    background-color: rgb(150, 201,62);
+                    height: 100%;
+                    width: 52%;
+                    box-sizing: border-box;
+                    border: 0.1em solid  rgb(150, 201,62);
+                    border-radius: 0.3em;
+                    padding: 0.5em;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 2em;
+                }
+            }
+            .main__formularioOrador__formulario__textArea p{
+                color: grey;
+                font-size: medium;
+            }
+
+
         }
-        
     }
 }
 /*----------------------------------- FOOTER --------------------------------------*/
 .footer {
-    background: linear-gradient(to right,rgb(28,54,67), rgb(30,83,114));
     height: 13.5vh;
-    
-    .footer__nav {
+    background: linear-gradient(to right,rgb(28,54,67), rgb(30,83,114));  
+    .footer__nav {       
         height: 100%;
         width: 100%;
         display: flex;
@@ -320,21 +518,413 @@ body {
             display: flex;
             flex-direction: column;
         }
-
     }
-
 }
 .footer a {
     color:white;
 }
 
 
-
  /*celular - tablet*/
  @media screen and (min-width: 0) and (max-width:991px){
-  
-    body {
-        padding:5px;
+
+
+    .estiloBotonJavaScript{
+        display: none;
+        visibility: hidden;
+    }
+    .estiloBotonReactScript{
+        display: none;
+        visibility: hidden;
+    }
+    .estiloBotonNegocios{
+        display: none;
+        visibility: hidden;
+    }
+    .estiloBotonStartups{
+
+        display: none;
+        visibility: hidden;
+    }
+
+    .card {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .header {
+        height: 50vh;
+        .header__cabeceraNavLogo{
+            height: 13.5%;
+            width: 100%;
+            background-color: rgb(53, 58, 64);
+            padding-left: 0.5%;
+            padding-right: 0.5%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: stretch;
+            .header__cabeceraNavLogo__logo{        
+                display: none;
+                visibility: hidden;
+                .header__cabeceraNavLogo__logo__a{
+                    display: none;
+                    visibility: hidden;
+                }
+                .header__cabeceraNavLogo__logo__a img {
+                    display: none;
+                    visibility: hidden;
+                }
+                .header__cabeceraNavLogo__logo__h2{
+                    display: none;
+                    visibility: hidden;
+                }
+            }
+            .header__cabeceraNavLogo__nav{
+                width: 100%;
+                display: flex;
+                align-items:center;
+                justify-content:space-evenly;
+                .header__cabeceraNavLogo__nav__ul{
+                    height: 100%;
+                    width: 100%;
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .header__cabeceraNavLogo__nav__ul li {
+                    align-items:center;
+                    justify-content:space-evenly;
+                }
+                .header__cabeceraNavLogo__nav__ul a {
+                    text-align: left;
+                    font-size:small;
+                }
+            }
+        }
+        .header__conferencia{
+            height: 86.5%;
+            width: 100%;
+            background: linear-gradient(to right bottom,#00000098, #00000098, #00000050), url("../assets/img/ba1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .header__conferencia__contenedorTxt{
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                height: 50%;
+                width: 100%;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-top: 0%;
+                margin-bottom: 20%;
+                .header__conferencia__contenedorTxt__botones__a{
+                    box-sizing: border-box;
+                    border: 0.1em solid  rgb(41, 167,67) !important;
+                    background-color: rgb(41, 167,67);
+                }
+                .header__conferencia__contenedorTxt__botones a{
+                    box-sizing: border-box;
+                    text-decoration:none;
+                    display: inline-block;
+                    padding: 0.5em;
+                    border: 0.01em solid white;
+                    border-radius: 0.2em;
+                }  
+            }
+        }
+    }
+    /*----------------------------------- MAIN --------------------------------------*/
+    .main{
+        height: 190vh;
+        width: 100%;
+        background-color: white;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .main__oradores{
+            width: 75%;
+            height: 10%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            .main__oradores__h2{
+                width: 100%;
+                height: 80%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .main__oradores__h2__chico{
+                    font-size:medium;
+                }
+            }
+            .main__oradores__tresOradores{
+                width:100%;
+                height: 50%;
+                display: flex;
+                justify-content: space-around;
+                .main__oradores__tresOradores__steve {
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .main__oradores__tresOradores__steve__img {
+                        width: auto;
+                        height: 75%;
+                                        
+                    }
+                    .main__oradores__tresOradores__steve__img img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+    
+                    .main__oradores__tresOradores__steve__card{
+                        width: 100%;
+                        height: 50%;
+                        
+                        .main__oradores__tresOradores__steve__card__etq {
+                            display: flex;
+                            align-items: start;
+                        }
+                        .main__oradores__tresOradores__steve__card__h3{
+                            box-sizing: border-box;
+                            padding-top: 0.1em;
+                            padding-left: 0.4em;
+                            font-size: x-large;
+                        }
+                        .main__oradores__tresOradores__steve__card__p{
+                            height: 100%;
+                            width: 100%;
+                            box-sizing: border-box;
+                            padding-top: 0.1em;
+                            padding-left: 0.4em;
+                            padding-right: 0.4em;
+                            font-size: small;
+                        }
+                    }
+                }
+                .main__oradores__tresOradores__gates {
+                    width: 25%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .main__oradores__tresOradores__gates__img{
+                        width: 100%;
+                        height: 60%;
+                        object-fit: contain;  
+                    }
+                    .main__oradores__tresOradores__gates__card{
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        .main__oradores__tresOradores__gates__card__etq{
+                            display: flex;
+                            align-items: start;
+                        }
+                        .main__oradores__tresOradores__gates__card__h3{
+                            box-sizing: border-box;
+                            padding-top: 0.1em;
+                            padding-left: 0.4em;
+                            font-size: x-large;
+                        }
+                        .main__oradores__tresOradores__gates__card__p{
+                            box-sizing: border-box;
+                            padding-top: 0.1em;
+                            padding-left: 0.4em;
+                            padding-right: 0.4em;
+                            font-size: small;
+                        }
+                    }
+                }
+                .main__oradores__tresOradores__ada {
+                    width: 25%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .main__oradores__tresOradores__ada__img {
+                        width: 100%;
+                        height: 60%;
+                        object-fit: contain; 
+                    }
+                    .main__oradores__tresOradores__ada__card{
+                        width: 100%;
+                        height: 50%;
+                        .main__oradores__tresOradores__ada__card__etq{
+                            display: flex;
+                            align-items: start;
+                        }
+                        .main__oradores__tresOradores__ada__card__h3 {
+                            box-sizing: border-box;
+                            padding-top: 0.1em;
+                            padding-left: 0.4em;
+                            font-size: x-large;
+                        }
+                        .main__oradores__tresOradores__ada__card__p{
+                            box-sizing: border-box;
+                            padding-top: 0.1em;
+                            padding-left: 0.4em;
+                            padding-right: 0.4em;
+                            font-size: small;
+                        }
+                    }
+    
+                }
+            }
+        }
+        .main__lugarFecha{
+
+            flex-direction: column-reverse;
+            .main__lugarFecha__img{
+                height: 100%;
+                width: 100%;
+                background-image: url("../assets/img/honolulu.jpg");
+                background-repeat: no-repeat; 
+                background-position: center center;
+                background-size: 100% 100%;
+                box-sizing: border-box;
+            }
+            .main__lugarFecha__txt{
+                height: 100%;
+                width: 100%;  
+                box-sizing: border-box;
+                margin-left: 0.0%;
+                display: flex;  
+                flex-direction: column;         
+            }
+            .main__lugarFecha__txt a {
+                margin-bottom: 0.3em;
+            }
+        }
+        .main__formularioOrador{
+            height: 25%;
+            width: 100%;
+            background-color: white;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .main__formularioOrador__h2{
+                height: 100%;
+                width: 100%;           
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                .main__formularioOrador__h2__div{
+                    height: 50%;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding-top: 2em;
+                    padding-bottom: 1em;
+                    font-size:medium;
+                }
+            }
+            .main__formularioOrador__h2 div {
+                height: 100%;
+                width: 100%;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
+            .main__formularioOrador__formulario{
+                height: 100%;
+                width: 100%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .main__formularioOrador__formulario__apellidoNombre{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .main__formularioOrador__formulario__apellidoNombre input{
+                    height: 100%;
+                    width: 25%;
+                    box-sizing: border-box;
+                    display: inline-block;
+                    margin-left: 1em;
+                    margin-right: 1em;
+                    padding: 0.3em;
+                }
+                .main__formularioOrador__formulario__textArea{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    box-sizing: border-box;
+                    margin-top: 1em;
+                    flex-direction: column;
+                    align-items: center;
+                    .main__formularioOrador__formulario__textArea__enviar{
+                        background-color: rgb(150, 201,62);
+                        height: 100%;
+                        width: 52%;
+                        box-sizing: border-box;
+                        border: 0.1em solid  rgb(150, 201,62);
+                        border-radius: 0.3em;
+                        padding: 0.5em;
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 2em;
+                    }
+                }
+                .main__formularioOrador__formulario__textArea p{
+                    color: grey;
+                    font-size: medium;
+                }
+    
+    
+            }
+        }
+    }
+    /*----------------------------------- FOOTER --------------------------------------*/
+    .footer {
+        height: 13.5vh;
+        background: linear-gradient(to right,rgb(28,54,67), rgb(30,83,114));  
+        .footer__nav {       
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            justify-content:stretch;
+            .footer__nav__ul {
+                height: 100%;
+                width: 100%;
+                align-items: center;
+                display: flex;        
+                justify-content:space-around;
+            }
+            .footer__nav__ul li {
+                
+                font-weight: 300;
+                font-size:large;
+            }
+            .footer__nav__ul a {
+                font-size: xx-small;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    .footer a {
+        color:white;
     }
     
     

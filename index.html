@@ -41,45 +41,53 @@
         </header>
         <main class="main">
             <section id="oradores" class="main__oradores">
-                <h2 class="main__oradores_h2">
-                    <div>
+                <h2 class="main__oradores__h2 ">
+                    <div class="main__oradores__h2__chico">
                         CONOCE A LOS
                     </div>
+                    <div>
                     ORADORES
+                    </div>
                 </h2>
                 <div class="main__oradores__tresOradores">
                     <div class="main__oradores__tresOradores__steve">
-                        <div class="main__oradores__tresOradores__steve_img">
-                            <img src="./assets/img/steve.jpg" alt="Steve Jobs" loading="lazy">
+                        <div class="main__oradores__tresOradores__steve__img">
+                            <img src="./assets/img/steve.jpg" alt="Steve Jobs" loading="lazy" class="">
                         </div>
-                        <div class="main__oradores__tresOradores__steve__etq">
-                            <h4>JavaScript</h4>
-                            <h4>React</h4>
+                        <div class="main__oradores__tresOradores__steve__card card">
+                            <div class="main__oradores__tresOradores__steve__card__etq">
+                                <h4 class="estiloBotonJavaScript">JavaScript</h4>
+                                <h4 class="estiloBotonReactScript">React</h4>
+                            </div>
+                            <h3 class="main__oradores__tresOradores__steve__card__h3">Steve Jobs</h3>
+                            <p class="main__oradores__tresOradores__steve__card__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facils explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</p>
                         </div>
-                        <h3>Steve Jobs</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nihil similique soluta alias ab architecto debitis doloremque inventore incidunt nam quis facere. Nemo eum ex eveniet modi rem possimus autem.</p>
                     </div>
                     <div class="main__oradores__tresOradores__gates">
                         <div class="main__oradores__tresOradores__gates__img">
-                            <img src="./assets/img/bill.jpg" alt="Bill Gates" loading="lazy">
+                            <img src="./assets/img/bill.jpg" alt="Bill Gates" loading="lazy" class="card-img-top img-fluid">
                         </div>
-                        <div class="main__oradores__tresOradores__gates__etq">
-                            <h4>JavaScript</h4>
-                            <h4>React</h4>
-                        </div>  
-                        <h3>Bill Gates</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti cupiditate exercitationem earum nobis quia excepturi iusto tempore, architecto consectetur soluta, cum quibusdam corporis recusandae labore quam distinctio harum. Fuga.</p>
+                        <div class="main__oradores__tresOradores__gates__card card">
+                            <div class="main__oradores__tresOradores__gates__card__etq">
+                                <h4 class="estiloBotonJavaScript">JavaScript</h4>
+                                <h4 class="estiloBotonReactScript">React</h4>
+                            </div>  
+                            <h3 class="main__oradores__tresOradores__gates__card__h3">Bill Gates</h3>
+                            <p class="main__oradores__tresOradores__gates__card__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facils explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</p>
+                        </div>
                     </div>
                     <div class="main__oradores__tresOradores__ada">
                         <div class="main__oradores__tresOradores__ada__img">
-                            <img src="./assets/img/ada.jpeg" alt="Ada Lovelace" loading="lazy">
+                            <img src="./assets/img/ada.jpeg" alt="Ada Lovelace" loading="lazy" class="card-img-top img-fluid">
                         </div>
-                        <div class="main__oradores__tresOradores__ada__etq">
-                            <h4>Negocios</h4>
-                            <h4>Startups</h4>
+                        <div class="main__oradores__tresOradores__ada__card card">
+                            <div class="main__oradores__tresOradores__ada__card__etq">
+                                <h4 class="estiloBotonNegocios">Negocios</h4>
+                                <h4 class="estiloBotonStartups">Startups</h4>
+                            </div>
+                            <h3 class="main__oradores__tresOradores__ada__card__h3">Ada Lovelace</h3>
+                            <p class="main__oradores__tresOradores__ada__card__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facils explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</p>
                         </div>
-                        <h3>Ada Lovelace</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti cupiditate exercitationem earum nobis quia excepturi iusto tempore, architecto consectetur soluta, cum quibusdam corporis recusandae labore quam distinctio harum. Fuga.</p>
                     </div>
                 </div>
             </section>
@@ -97,16 +105,15 @@
             </section>
             <section id="formularioOrador" class="main__formularioOrador">
                 <h2 class="main__formularioOrador__h2">
-                    <span class="main__formularioOrador__h2__span">
+                    <div class="main__formularioOrador__h2__div">
                         Conviértete en un
-                    </span>
-                    <span>
+                    </div>
+                    <div>
                         ORADOR
-                    </span>
+                    </div>
                 </h2>
-                <p>Anotate como orador para dar una 
-                    <span>charla ignite</span>
-                    . Cuéntanos de qué quieres hablar!
+                <p class="fontSizeMedium">Anótate como orador para dar una 
+                    <span class="underlineDotted">charla ignite</span>. Cuéntanos de qué quieres hablar!
                 </p>
                 <form action="" class="main__formularioOrador__formulario">
                     <div class="main__formularioOrador__formulario__apellidoNombre">
@@ -114,10 +121,12 @@
                         <input type="text" name="apellidoOradorForm" id="apellidoOradorForm" placeholder="Apellido">
                     </div>
                     <div class="main__formularioOrador__formulario__textArea">
-                        <textarea name="temaOrador" id="temaOrador" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
-                        <p>Recuerda incluir un título para tu charla</p>
                         <div>
-                        <input type="submit" value="Enviar" class="estiloBotonVerde">
+                            <textarea name="temaOrador" id="temaOrador" cols="105" rows="5" placeholder="Sobre qué quieres hablar?"></textarea>
+                            <p>Recuerda incluir un título para tu charla</p>
+                        </div>
+                        <div class="main__formularioOrador__formulario__textArea__enviar">
+                            <input type="submit" value="Enviar" class="estiloBotonVerde main__formularioOrador__formulario__textArea__enviar__input">
                         </div>
                     </div>
                 </form>
