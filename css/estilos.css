@@ -221,7 +221,6 @@ body {
         }
     }
 /* ------------------------------------Pagina Comprar Tickets ------------------------------------*/
-
     .ticketsSection {
         height: 86.5%;
         width: 100%;
@@ -450,7 +449,6 @@ body {
                     }
                 }
             }
-
         }
     }
 }
@@ -907,6 +905,236 @@ body {
                     border-radius: 0.2em;
                 }  
             }
+        } 
+        .ticketsSection {
+            height: 86.5%;
+            width: 100%;
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+            justify-content: flex-end;
+            .ticketsSection-cupones{
+                height: 45%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content:center;
+                justify-items: center;
+                align-items: center;
+                box-sizing: border-box;
+                .ticketsSection-cupones-estudiante{
+                    height: 95%;
+                    width: 33.3%;
+                    box-sizing: border-box;
+                    margin: 0.25em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.5em;
+                    border: 0.113em solid rgb(0,123,255);
+                    .ticketsSection-cupones-estudiante-h3Documentacion{
+                        display: none;
+                        visibility: hidden;
+                    }
+                }
+                .ticketsSection-cupones-trainee{
+                    height: 95%;
+                    width: 33.3%;
+                    box-sizing: border-box;
+                    margin: 0.25em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.5em;
+                    border: 0.113em solid rgb(23,162,184);
+                    .ticketsSection-cupones-trainee-h3Documentacion{
+                        display: none;
+                        visibility: hidden;
+                    }
+                }
+                .ticketsSection-cupones-junior{
+                    height: 95%;
+                    width: 33.3%;
+                    box-sizing: border-box;
+                    margin: 0.25em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.5em;
+                    border: 0.113em solid rgb(255,193,7);
+                    .ticketsSection-cupones-junior-h3Documentacion{
+                        display: none;
+                        visibility: hidden;
+
+                    }
+                }
+            }
+            .ticketsSection-titulo {
+                height: 5%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .ticketsSection-titulo-h1 {
+                    display: flex;
+                    flex-direction: column;
+                    .ticketsSection-titulo-h1-span1 {
+                        font-size: xx-small;
+                    }
+                    .ticketsSection-titulo-h1-span2 {
+                        font-size: large;
+                    }
+                }
+                .ticketsSection-titulo-h1 span {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .ticketsSection-formulario {
+                height: 50%;
+                width: 100%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: center;
+                align-content: center;
+                .ticketsSection-formulario-form{
+                    height: 100%;
+                    width: 40%;
+                    display: flex;
+                    box-sizing:border-box;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .ticketsSection-formulario-form div {
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        flex-direction: row;
+                        box-sizing: border-box;
+                    }
+                    .ticketsSection-formulario-form-div1 {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                    }
+                    .ticketsSection-formulario-form-div1 input {
+                        width: 100%;
+                        display: inline-block;
+                        justify-content: space-evenly;
+                        box-sizing: border-box;
+                        margin-top: 0.1em;
+                        padding-right: 0.1em;
+                        padding-left: 0.1em;
+                        padding-top: 0.1em;
+                        padding-bottom: 0.1em;
+                    }
+    
+                    .ticketsSection-formulario-form-div2 input {
+                        display: inline-block;
+                        width: 100%;
+                        box-sizing: border-box;
+                        margin-top: 0.1em;
+                        padding-right: 0.1em;
+                        padding-left: 0.1em;
+                        padding-top: 0.1em;
+                        padding-bottom: 0.1em;
+                    }
+                    .ticketsSection-formulario-form-div3 label{
+                        display: none;
+                        visibility: hidden;  
+                    }
+                    .ticketsSection-formulario-form-div3 {
+                        display: none;
+                        visibility: hidden;   
+                        .ticketsSection-formulario-form-div3-label1{
+                            display: none;
+                            visibility: hidden;  
+                        }
+                        .ticketsSection-formulario-form-div3-label2 {
+                            display: none;
+                            visibility: hidden;  
+                        }
+                    }
+                    .ticketsSection-formulario-form-div4 {
+                        width: 100%;
+                        box-sizing: border-box;
+                        margin-top: 0.1em;
+                        margin-bottom: 0.1em;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                    }
+                    .ticketsSection-formulario-form-div4 input {
+                        display: inline-block;
+                        box-sizing: border-box;
+                        padding-top: 0.1em;
+                        padding-bottom: 0.1em;
+                        padding-left: 0.1em;
+                        padding-right: 0.1em;
+                        margin-right: 0.1em;
+                        margin-left: 0.1em;
+                    }
+                    .ticketsSection-formulario-form-div4 select {
+                        display: inline-block;
+                        box-sizing: border-box;
+                        padding-top: 0.1em;
+                        padding-bottom: 0.1em;
+                        padding-left: 0.1em;
+                        padding-right: 0.1em;
+                    }
+                    .ticketsSection-formulario-form-div5 input {
+                        display: inline-block;
+                        box-sizing: border-box;
+                        margin-top: 0.1em;
+                        margin-bottom: 0.1em;
+                        padding-right: 0.1em;
+                        padding-left: 0.1em;
+                        padding-top: 0.1em;
+                        padding-bottom: 0.1em;
+                    }
+                    .ticketsSection-formulario-form-div6 {
+                        height: 16%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        box-sizing: border-box;
+                        margin-top: 0.1em;
+                        margin-bottom: 0.1em;
+                        .ticketsSection-formulario-form-div6 div{
+                            background-color: rgb(150, 201,62);
+                            height: 50%;
+                            width: 50%;
+                            box-sizing: border-box;
+                            border: 0.1em solid  rgb(150, 201,62);
+                            border-radius: 0.1em;
+                            padding: 0.1em;
+                        }
+                        .ticketsSection-formulario-form-div6-input1 {
+                            background-color: rgb(150, 201,62);
+                            height: 80%;
+                            width: 100%;
+                            box-sizing: border-box;
+                            padding: 0.1em 0.1em;
+                            margin-right: 0.1em;
+                        }
+                        .ticketsSection-formulario-form-div6-input2 {
+                            background-color: rgb(150, 201,62);
+                            height: 80%;
+                            width: 100%;    
+                            box-sizing: border-box;
+                            padding: 0.1em 0.1em;
+                            margin-left: 0.1em;
+                            margin-right: 0.1em;
+                        }
+                    }
+                }
+            }
         }
     }
     /*----------------------------------- MAIN --------------------------------------*/
@@ -1203,11 +1431,6 @@ body {
             }
         }
     }
-
-    .mainTickets {
-
-    }
-
     /*----------------------------------- FOOTER --------------------------------------*/
     .footer {
         height: 13.5vh;
@@ -1219,14 +1442,13 @@ body {
             align-items:center;
             justify-content:stretch;
             .footer__nav__ul {
-                height: 100%;
+                height: 90%;
                 width: 100%;
                 align-items: center;
                 display: flex;        
                 justify-content:space-around;
             }
             .footer__nav__ul li {
-                
                 font-weight: 300;
                 font-size:large;
             }
@@ -1239,9 +1461,7 @@ body {
     }
     .footer a {
         color:white;
-    }
-    
-    
+    } 
 }
 
 
