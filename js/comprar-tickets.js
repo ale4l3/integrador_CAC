@@ -13,6 +13,7 @@ let divErrorApellido    = document.getElementById("mensajeErrorApellido");
 let mail                = document.getElementById("correoCompra");
 let divErrorMail        = document.getElementById("mensajeErrorMail");
 let cantidadTickets     = document.getElementById("cantidadTickets");
+let divErrorCantidad    = document.getElementById("mensajeErrorCantidad");
 let categoria           = document.getElementById("categoria");
 
 // Funcion para quitar el estilo de error a los elementos del form
@@ -24,7 +25,7 @@ const quitarClaseError = () => {
     }
     let listaNodosDiv = document.querySelectorAll(".displayBlockOn");
     for (let index = 0; index < listaNodosDiv.length; index++) {
-        listaNodosDiv[index].classList.remove('.displayBlockOn'); 
+        listaNodosDiv[index].classList.remove('displayBlockOn'); 
     }
 }
 
@@ -55,7 +56,7 @@ const totalAPagar = () => {
 
     if (!mailValido(mail.value)) {
         alert("Por favor, escribí tu correo.");
-        apellido.classList.add("is-invalid");
+        mail.classList.add("is-invalid");
         divErrorMail.classList.add("displayBlockOn"); // lo que hace esta clase es poner un div en display:block, ya que tiene la clase class="invalid-feedback"
         mail.focus();
         return;
@@ -65,6 +66,7 @@ const totalAPagar = () => {
     if ( (cantidadTickets.value == 0) || (isNaN(cantidadTickets.value))) {
         alert("Por favor, ingresá correctamente cantidad de tickets.");
         cantidadTickets.classList.add("is-invalid");
+        divErrorCantidad.classList.add("displayBlockOn");
         cantidadTickets.focus();
         return;
     }

@@ -84,20 +84,20 @@
                 <form class="ticketsSection-formulario-form" action="">
                     <div class="ticketsSection-formulario-form-div1">
                         <div>
-                            <input class="inputBorderFormTickets form-control" type="text" name="nombreCompra" id="nombreCompra" placeholder="Nombre">
+                            <input class="inputBorderFormTickets form-control" type="text" name="nombreCompra" id="nombreCompra" placeholder="Nombre" required>
                             <div class="invalid-feedback" id="mensajeErrorNombre">
                                 <p>Ingrese su nombre</p>
                             </div>
                         </div>
                         <div>
-                            <input class="inputBorderFormTickets form-control" type="text" name="apellidoCompra" id="apellidoCompra" placeholder="Apellido">  
+                            <input class="inputBorderFormTickets form-control" type="text" name="apellidoCompra" id="apellidoCompra" placeholder="Apellido" required>  
                             <div class="invalid-feedback" id="mensajeErrorApellido">
                                 <p>Ingrese su apellido</p>
                             </div>
                         </div>                       
                     </div>
                     <div class="ticketsSection-formulario-form-div2">
-                        <input class="inputBorderFormTickets form-control" type="email" name="correoCompra" id="correoCompra" placeholder="Correo">
+                        <input class="inputBorderFormTickets form-control" type="email" name="correoCompra" id="correoCompra" placeholder="Correo" required>
                         <div class="invalid-feedback" id="mensajeErrorCorreo">
                             <p>Ingrese un correo valido</p>
                         </div>
@@ -108,12 +108,12 @@
                     </div>
                     <div class="ticketsSection-formulario-form-div4">
                         <div>
-                            <input class="inputBorderFormTickets form-control" type="text" name="cantidadTickets" id="cantidadTickets" placeholder="cantidad">
+                            <input class="inputBorderFormTickets form-control" type="text" name="cantidadTickets" id="cantidadTickets" placeholder="cantidad" required>
                             <div class="invalid-feedback" id="mensajeErrorCantidad">
                                 <p>Ingrese cantidad valida</p>
                             </div>
                         </div>
-                        <select class="inputBorderFormTickets" name="categoria" id="categoria">
+                        <select class="inputBorderFormTickets" name="categoria" id="categoria" required>
                             <option value="trainee">Sin categoría</option>
                             <option value="estudiante" selected>Estudiante</option>
                             <option value="trainee">Trainee</option>
