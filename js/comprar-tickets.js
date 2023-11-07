@@ -37,15 +37,15 @@ const totalAPagar = () => {
     if (nombre.value === '') {
         alert("Por favor, escribí tu nombre.");
         nombre.classList.add("is-invalid");
-        divErrorNombre.classList.add(".displayBlockOn"); // lo que hace esta clase es poner un div en display:block, ya que tiene la clase class="invalid-feedback"
+        divErrorNombre.classList.add("displayBlockOn"); // lo que hace esta clase es poner un div en display:block, ya que tiene la clase class="invalid-feedback"
         nombre.focus();
         return;
     }
     if (apellido.value === "") {
         alert("Por favor, escribí tu apellido.");
         apellido.classList.add("is-invalid");
-        divErrorApellido.classList.add("mensajeErrorApellido"); // lo que hace esta clase es poner un div en display:block, ya que tiene la clase class="invalid-feedback"
-        nombre.focus();
+        divErrorApellido.classList.add("displayBlockOn"); // lo que hace esta clase es poner un div en display:block, ya que tiene la clase class="invalid-feedback"
+        apellido.focus();
         return;
     }
     //Para determinar
@@ -53,11 +53,11 @@ const totalAPagar = () => {
         return  /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail);
     }
 
-    if (!mailValido()) {
+    if (!mailValido(mail.value)) {
         alert("Por favor, escribí tu correo.");
         apellido.classList.add("is-invalid");
-        divErrorMail.classList.add("mensajeErrorMail"); // lo que hace esta clase es poner un div en display:block, ya que tiene la clase class="invalid-feedback"
-        nombre.focus();
+        divErrorMail.classList.add("displayBlockOn"); // lo que hace esta clase es poner un div en display:block, ya que tiene la clase class="invalid-feedback"
+        mail.focus();
         return;
     }
 
