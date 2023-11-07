@@ -11,7 +11,7 @@ body {
     background-color: rgb(31, 31, 31);
 }
 
-/* Clases utilitarias*/
+/* --------------------------------------Clases utilitarias---------------------------------*/
 /*Colores*/
 .fuenteBlanca {
     color: white;
@@ -126,7 +126,37 @@ body {
 #backgroundWhite {
     background-color: white;
      }
-/*Estilos por secciones*/
+/* ------------------------------------------Animaciones----------------------------------*/
+
+.hoverAncla:hover {
+    transform: translate (1em 1em) scale(1) translateZ(1em);
+    background-color: rgb(46, 166,69);
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    transition: all 0.5s;
+}
+.hoverAnclaPaginaTickets {
+    transform: translate (1em 1em) scale(1) translateZ(1em);
+    background-color: rgb(46, 166,69);
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.resaltarCupones:hover {
+    transform: translate (1em 1em) scale(1) translateZ(1em);
+    transition: all 0.5s;
+}
+.entradaDeshabilitada:disabled {
+    background-color: rgb(204, 229, 255);
+    border-radius: 0.5em;
+}
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*----------------------------------ESTILOS POR SECCIONES---------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+
 /*---------------------------------- HEADER ----------------------------------------------*/
 .header {
     height: 90vh;

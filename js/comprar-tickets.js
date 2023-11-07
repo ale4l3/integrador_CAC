@@ -56,12 +56,12 @@ const totalAPagar = () => {
     if (!mailValido()) {
         alert("Por favor, escribí tu correo.");
         apellido.classList.add("is-invalid");
-        divErrorApellido.classList.add("mensajeErrorApellido"); // lo que hace esta clase es poner un div en display:block, ya que tiene la clase class="invalid-feedback"
+        divErrorMail.classList.add("mensajeErrorMail"); // lo que hace esta clase es poner un div en display:block, ya que tiene la clase class="invalid-feedback"
         nombre.focus();
         return;
     }
 
-    //Verifico si está ingresando al menos 1 ticjet, sino que aplique un estilo de error, haga foco en el campo y se detenga
+    //Verifico si está ingresando al menos 1 ticket, sino que aplique un estilo de error, haga foco en el campo y se detenga
     if ( (cantidadTickets.value == 0) || (isNaN(cantidadTickets.value))) {
         alert("Por favor, ingresá correctamente cantidad de tickets.");
         cantidadTickets.classList.add("is-invalid");
@@ -96,7 +96,7 @@ const totalAPagar = () => {
             break;
     }
     // Inserto el valor en el HTML
-    totalPago.innerHTML = totalValorTickets;
+    total.innerHTML = totalValorTickets;
 }
 
 // Boton Resumen recibe un escuchador y la funcion del calcula
@@ -105,7 +105,7 @@ btnResumen.addEventListener ('click', totalAPagar);
 //Funcion para el boton Borrar para que borre el valor
 const resetTotalAPagar = () => {
     quitarClaseError();
-    totalPago.innerHTML = "";
+    total.innerHTML = "";
 }
 btnBorrar.addEventListener('click', resetTotalAPagar);
 
