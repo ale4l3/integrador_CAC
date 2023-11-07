@@ -52,7 +52,7 @@
                 <div class="main__oradores__tresOradores">
                     <div class="main__oradores__tresOradores__steve">
                         <div class="main__oradores__tresOradores__steve__img">
-                            <img src="./assets/img/steve.jpg" alt="Steve Jobs" loading="lazy" class="">
+                            <img src="./assets/img/steve.jpg" alt="Steve Jobs" loading="lazy" class="card-img-top img-fluid">
                         </div>
                         <div class="main__oradores__tresOradores__steve__card card">
                             <div class="main__oradores__tresOradores__steve__card__etq">
@@ -122,12 +122,16 @@
                     </div>
                     <div class="main__formularioOrador__formulario__textArea">
                         <div>
-                            <textarea name="temaOrador" id="temaOrador" cols="105" rows="5" placeholder="Sobre qué quieres hablar?"></textarea>
-                            <p>Recuerda incluir un título para tu charla</p>
+                            <div class="main__formularioOrador__formulario__textArea__textArea">
+                                <textarea name="temaOrador" id="temaOrador" cols="105" rows="5" placeholder="Sobre qué quieres hablar?"></textarea>
+                                <p>Recuerda incluir un título para tu charla</p>
+                            </div>
                         </div>
-                        <div class="main__formularioOrador__formulario__textArea__enviar">
-                            <input type="submit" value="Enviar" class="estiloBotonVerde main__formularioOrador__formulario__textArea__enviar__input">
-                        </div>
+                        <div class="main__formularioOrador__formulario__textArea__div">
+                            <div class="main__formularioOrador__formulario__textArea__div__enviar">
+                                <input type="submit" value="Enviar" class="estiloBotonVerde main__formularioOrador__formulario__textArea__enviar__input">
+                            </div>
+                        </div>  
                     </div>
                 </form>
             </section>
@@ -145,6 +149,8 @@
                 </ul>
             </nav>
         </footer>
+        
         <script src="./js/bootstrap.bundle.min.js"></script>
+        
     </body>
 </html>

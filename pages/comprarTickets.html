@@ -9,7 +9,7 @@
     <title>Comprar Tickets</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="backgroundWhite">
         <section class="header__cabeceraNavLogo">
              <div class="header__cabeceraNavLogo__logo">
                  <a href="../index.html" class="header__cabeceraNavLogo__logo__a">
@@ -29,7 +29,113 @@
                  </ul>
              </nav>
         </section>
+        <section class="ticketsSection">
+            <div class="ticketsSection-cupones">
+                <div class="ticketsSection-cupones-estudiante">
+                    <h2 class="ticketsSection-cupones-estudiante-h2 h4 fuenteBold">
+                        Estudiante
+                    </h2>
+                    <h3 class="ticketsSection-cupones-estudiante-h3Descuento h5">
+                        Tienen un descuento
+                    </h3>
+                    <p class="ticketsSection-cupones-estudiante-porcentaje h5 fuenteBold">
+                        80%
+                    </p>
+                    <h3 class="ticketsSection-cupones-estudiante-h3Documentacion text-body-secondary h6">
+                        *presentar documentación
+                    </h3>
+                </div>
+                <div class="ticketsSection-cupones-trainee">
+                    <h2 class="ticketsSection-cupones-trainee-h2 h4 fuenteBold">
+                        Trainee
+                    </h2>
+                    <h3 class="ticketsSection-cupones-trainee-h3Descuento h5">
+                        Tienen un descuento
+                    </h3>
+                    <p class="ticketsSection-cupones-trainee-porcentaje h5 fuenteBold">
+                        50%
+                    </p>
+                    <h3 class="ticketsSection-cupones-trainee-h3Documentacion text-body-secondary h6">
+                        *presentar documentación
+                    </h3>
+                </div>
+                <div class="ticketsSection-cupones-junior">
+                    <h2 class="ticketsSection-cupones-junior-h2 h4 fuenteBold">
+                        Junior
+                    </h2>
+                    <h3 class="ticketsSection-cupones-junior-h3Descuento h5">
+                        Tienen un descuento
+                    </h3>
+                    <p class="ticketsSection-cupones-junior-porcentaje h5 fuenteBold">
+                        15%
+                    </p>
+                    <h3 class="ticketsSection-cupones-junior-h3Documentacion text-body-secondary h6 ">
+                        *presentar documentación
+                    </h3>
+                </div>
+            </div>
+            <div class="ticketsSection-titulo">
+                <h1 class="ticketsSection-titulo-h1">
+                    <span class="ticketsSection-titulo-h1-span1">VENTA</span>
+                    <span class="ticketsSection-titulo-h1-span2">VALOR DE TICKET $200</span>
+                </h1>
+            </div>
+            <div class="ticketsSection-formulario">
+                <form class="ticketsSection-formulario-form" action="">
+                    <div class="ticketsSection-formulario-form-div1">
+                        <div>
+                            <input class="inputBorderFormTickets form-control" type="text" name="nombreCompra" id="nombreCompra" placeholder="Nombre">
+                            <div class="invalid-feedback" id="mensajeErrorNombre">
+                                <p>Ingrese su nombre</p>
+                            </div>
+                        </div>
+                        <div>
+                            <input class="inputBorderFormTickets form-control" type="text" name="apellidoCompra" id="apellidoCompra" placeholder="Apellido">  
+                            <div class="invalid-feedback" id="mensajeErrorApellido">
+                                <p>Ingrese su apellido</p>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="ticketsSection-formulario-form-div2">
+                        <input class="inputBorderFormTickets form-control" type="email" name="correoCompra" id="correoCompra" placeholder="Correo">
+                        <div class="invalid-feedback" id="mensajeErrorCorreo">
+                            <p>Ingrese un correo valido</p>
+                        </div>
+                    </div>
+                    <div class="ticketsSection-formulario-form-div3">
+                        <label class="ticketsSection-formulario-form-div3-label1" for="cantidadTickets">Cantidad</label>
+                        <label class="ticketsSection-formulario-form-div3-label" for="categoria">Categoria</label>
+                    </div>
+                    <div class="ticketsSection-formulario-form-div4">
+                        <div>
+                            <input class="inputBorderFormTickets form-control" type="text" name="cantidadTickets" id="cantidadTickets" placeholder="cantidad">
+                            <div class="invalid-feedback" id="mensajeErrorCantidad">
+                                <p>Ingrese cantidad valida</p>
+                            </div>
+                        </div>
+                        <select class="inputBorderFormTickets form-select" name="categoria" id="categoria">
+                            <option value="trainee">Sin categoría</option>
+                            <option value="estudiante" selected>Estudiante</option>
+                            <option value="trainee">Trainee</option>
+                            <option value="junior">Junior</option>
+                        </select>
+                    </div>
+                    <div class="ticketsSection-formulario-form-div5">
+                        <input  class="inputBorderFormTickets" id="total" name="no_modifica" type="text" value="Total a pagar:$" readonly >
+                    </div>
+                    <div class="ticketsSection-formulario-form-div6">
+                        <div>
+                            <input type="submit" value="Borrar" class="estiloBotonVerde ticketsSection-formulario-form-div6-input1" id="btnBorrar">
+                        </div>
+                        <div>
+                            <input type="submit" value="Resumen" class="estiloBotonVerde ticketsSection-formulario-form-div6-input2" id="btnResumen">
+                        </div>
+                    </div>
+                </form>
+            </div>   
+        </section>
     </header>
+
     <footer class="footer">
         <nav class="footer__nav noneListStyle noneDecoration">
             <ul class="footer__nav__ul">
@@ -43,7 +149,8 @@
             </ul>
         </nav>
     </footer>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/comprar-tickets.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 </body>
