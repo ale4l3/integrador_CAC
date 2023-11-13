@@ -367,12 +367,16 @@ body {
                     padding-bottom: 0.25em;
                 }
 
+                .ticketsSection-formulario-form-div2 {
+                    width: 95%;
+                }
+
                 .ticketsSection-formulario-form-div2 input {
                     display: inline-block;
                     width: 100%;
                     box-sizing: border-box;
                     margin-top: 0.7em;
-                    padding-right: 31.5em;
+                    padding-right: 0.5em;
                     padding-left: 0.5em;
                     padding-top: 0.25em;
                     padding-bottom: 0.25em;
@@ -432,15 +436,15 @@ body {
                     padding-right: 14.3em;
 
                 }
-                .ticketsSection-formulario-form-div5 input {
+                .ticketsSection-formulario-form-div5 {
                     display: inline-block;
                     box-sizing: border-box;
-                    margin-top: 1.3em;
-                    margin-bottom: 1.3em;
-                    padding-right: 31.0em;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    padding-right: 36.9em;
                     padding-left: 1.0em;
-                    padding-top: 0.5em;
-                    padding-bottom: 0.5em;
+                    padding-top: 0.8em;
+                    padding-bottom: 0.8em;
                     
                 }
                 .ticketsSection-formulario-form-div6 {
@@ -1098,7 +1102,19 @@ body {
                         margin-bottom: 0.1em;
                         display: flex;
                         flex-direction: row;
-                        justify-content: space-evenly;
+                        justify-content: center;
+                    }
+                    .ticketsSection-formulario-form-div4 div {
+                        width: 50%;
+                    }
+                    .ticketsSection-formulario-form-div4 select {
+                        width: 50%;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        padding-top: 0.1em;
+                        padding-bottom: 0.1em;
+                        padding-left: 0.1em;
+                        padding-right: 0.1em;
                     }
                     .ticketsSection-formulario-form-div4 input {
                         display: inline-block;
@@ -1109,20 +1125,15 @@ body {
                         padding-right: 0.1em;
                         margin-right: 0.1em;
                         margin-left: 0.1em;
+    
                     }
-                    .ticketsSection-formulario-form-div4 select {
+                    .ticketsSection-formulario-form-div5{
+                        height: 15%;
+                        width: 100%;
                         display: inline-block;
                         box-sizing: border-box;
-                        padding-top: 0.1em;
-                        padding-bottom: 0.1em;
-                        padding-left: 0.1em;
-                        padding-right: 0.1em;
-                    }
-                    .ticketsSection-formulario-form-div5 input {
-                        display: inline-block;
-                        box-sizing: border-box;
-                        margin-top: 0.1em;
-                        margin-bottom: 0.1em;
+                        margin-top: 0.1em !important;
+                        margin-bottom: 0.1em !important;
                         padding-right: 0.1em;
                         padding-left: 0.1em;
                         padding-top: 0.1em;
